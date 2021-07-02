@@ -1,8 +1,8 @@
 {
-    "name": "magepack",
+    "name": "magepack_bundler",
     "version": "2.4.1",
     "bin": "./cli.js",
-    "repository": "https://github.com/magesuite/magepack.git",
+    "repository": "https://github.com/Daseraf/magepack.git",
     "author": "creativestyle",
     "license": "OSL-2.0",
     "main": "index.js",
@@ -65,8 +65,5 @@
         "jest": "^26.1.0",
         "lint-staged": "^10.1.0",
         "prettier": "^2.0.2"
-    },
-    "optionalDependencies": {
-        "puppeteer": "^2.1.1"
     }
 }

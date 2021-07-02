@@ -1,4 +1,4 @@
-# Magepack 🚀
+# Magepack - Bundler 🚀
 
 **Version 2.0.0 of Magepack released, with greater performance results and easier usage!**
 
@@ -39,45 +39,15 @@ yarn global add magepack
 ## Usage
 
 ```shell
-Usage: magepack [generate|bundle] <options...>
+Usage: magepack [bundle] <options...>
 
 Options:
   -v, --version       Output the current version.
   -h, --help          Show this command summary.
 
 Commands:
-  generate [options]  Generate optimization configuration based on given page URLs.
   bundle [options]    Bundle JavaScript files using given configuration file.
 ```
-
-### Generating bundler configuration
-
-First step is to run the generation against the existing, working shop. You can do it on any machine with access to the target shop, even your own computer. The goal here is to collect all of the RequireJS dependencies needed for a certain type of page layout. Currently, following bundles are prepared:
-
--   `cms` containing modules needed by CMS pages.
--   `category` containing modules needed by category pages.
--   `product` containing modules needed by product pages.
--   `checkout` containing modules needed by cart and checkout pages.
-
-In addition, there is the `common` bundle created by extracting all modules needed by each of above and loaded on every page.
-
-#### Running the generator
-
-```
-magepack generate --cms-url="{{CMS_PAGE_URL}}" --category-url="{{CATEGORY_PAGE_URL}}" --product-url="{{PRODUCT_PAGE_URL}}"
-```
-
-There are 3 required options you need to pass:
-
-`--cms-url` - URL to one of CMS pages (e.g. homepage).
-
-`--category-url` - URL to one of category pages.
-
-`--product-url` - URL to one of product pages.
-
-_Note: Magepack will use given product page, add this product to the cart and visit both cart and checkout pages to collect dependencies._
-
-Running the above command will generate `magepack.config.js` file, where you can find each of the prepared bundles with the list of modules that will be included in them.
 
 ### Bundling
 

@@ -1,1 +1,1 @@
-module.exports = require('./lib/generate/collector');
+module.exports = require('./lib/bundle');
