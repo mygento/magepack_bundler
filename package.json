@@ -1,8 +1,8 @@
 {
     "name": "magepack_bundler",
-    "version": "2.4.1",
+    "version": "2.4.1.1",
     "bin": "./cli.js",
-    "repository": "https://github.com/Daseraf/magepack.git",
+    "repository": "https://github.com/mygento/magepack_bundler.git",
     "author": "creativestyle",
     "license": "OSL-2.0",
     "main": "index.js",
